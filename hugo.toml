@@ -1,0 +1,37 @@
+baseURL = "https://example.com/"
+defaultContentLanguage = "zh"
+title = "我的技术笔记"
+theme = "PaperMod"
+paginate = 10
+
+# Hugo v0.158+ 推荐的新多语言配置(替代 languageCode)
+[languages.zh]
+  languageName = "中文"
+  weight = 1
+  contentDir = "content"
+
+[params]
+  env = "production"
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  disableSpecial1stPost = true
+  hideFooter = false
+  ShowSearchButton = true
+  defaultTheme = "auto"
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "笔记"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 3
