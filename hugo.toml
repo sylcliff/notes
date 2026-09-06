@@ -24,6 +24,13 @@ theme = "PaperMod"
   ShowSearchButton = true
   defaultTheme = "auto"
 
+# Keep $...$ and $$...$$ as raw text so KaTeX (injected via extend_head/footer) can render them.
+[markup.goldmark.extensions.passthrough]
+  enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+  block = [["$$", "$$"]]
+  inline = [["$", "$"]]
+
 [menu]
   [[menu.main]]
     name = "首页"
