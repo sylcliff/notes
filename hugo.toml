@@ -2,7 +2,9 @@ baseURL = "https://notes.pages.dev/"
 defaultContentLanguage = "zh"
 title = "我的技术笔记"
 theme = "PaperMod"
-paginate = 10
+
+[pagination]
+  pagerSize = 10
 
 # Hugo v0.158+ 推荐的新多语言配置(替代 languageCode)
 [languages.zh]
