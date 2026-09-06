@@ -1,0 +1,22 @@
+# Cloudflare Pages project configuration.
+#
+# This file is read by:
+#   - Cloudflare Pages Git integration: build_command / pages_build_output_dir
+#     override the dashboard's build settings if present.
+#   - Wrangler CLI: for local preview (`wrangler pages dev`) and direct
+#     uploads (`wrangler pages deploy`).
+#
+# Project identity (project name, subdomain, GitHub source link) still lives
+# in the Cloudflare dashboard and is not duplicated here.
+
+name = "notes"
+compatibility_date = "2026-09-06"
+pages_build_output_dir = "./public"
+
+# Mirror dashboard build settings so a fresh `wrangler pages deploy` from
+# a clean checkout reproduces what Git integration produces.
+# (Ignored by dashboard Git integration when omitted — kept for clarity.)
+#
+# build_command  = "hugo"
+# root_dir       = "/"
+# build_image_major_version = 3
