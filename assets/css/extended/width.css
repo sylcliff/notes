@@ -1,0 +1,8 @@
+/* Widen main content + nav for wider screens.
+ * PaperMod defaults: --main-width: 720px, --nav-width: 1024px.
+ * Override at :root so all derived values (.main, .footer, .header)
+ * pick it up via calc(var(--main-width) + var(--gap) * 2). */
+:root {
+    --main-width: 960px;
+    --nav-width: 1280px;
+}
